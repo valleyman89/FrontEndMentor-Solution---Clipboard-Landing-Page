@@ -83,7 +83,7 @@ p {
 
 .btn--block {
   display: inline-block;
-  width: 100%;
+  width: 85%;
 }
 .btn-primary {
   color: white;
@@ -96,9 +96,20 @@ p {
   box-shadow: 0 5px 5px rgba(98, 115, 255, 0.5);
 }
 
+.btn--small {
+  width: 10rem;
+}
+
 .btn-primary:hover,
 .btn-secondary:hover {
   transform: scale(1.05);
+}
+
+@media screen and (min-width: 768px) {
+  .btn--block {
+    margin: 0 1rem;
+    width: auto;
+  }
 }
 
 /* SVG Icon */
@@ -162,6 +173,13 @@ p {
   .partner_sections {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
+}
+
+/* Download Section */
+
+.download {
+  text-align: center;
+  line-height: 2;
 }
 
 /* Footer */
