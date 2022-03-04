@@ -36,16 +36,6 @@ body {
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 2rem;
 }
-button.btn {
-  border: 0;
-  border-radius: 25px;
-  color: white;
-  cursor: pointer;
-  display: block;
-  margin: 2rem;
-  padding: 1.5rem;
-  width: 35rem;
-}
 
 h1,
 h2,
@@ -57,18 +47,33 @@ p {
 }
 
 /* Button */
-.btn.ios {
+.btn {
+  border-radius: 40px;
+  border: 0;
+  cursor: pointer;
+  margin: 1rem 0;
+  outline: 0;
+  padding: 2rem 4vw;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn--block {
+  display: inline-block;
+  width: 100%;
+}
+.btn-primary {
+  color: white;
   background-color: var(--color-primary);
   box-shadow: 0 5px 5px rgba(38, 186, 164, 0.5);
 }
-.btn.mac {
+.btn-secondary {
+  color: white;
   background-color: var(--color-secondary);
   box-shadow: 0 5px 5px rgba(98, 115, 255, 0.5);
 }
 
-.btn.ios:hover {
-  background-color: var(--color-primary);
-}
-.btn.mac:hover {
-  background-color: var(--color-secondary);
+.btn-primary:hover,
+.btn-secondary:hover {
+  transform: scale(1.05);
 }
