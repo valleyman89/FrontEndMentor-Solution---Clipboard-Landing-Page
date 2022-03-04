@@ -145,6 +145,25 @@ p {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
+
+/* Partner Section */
+
+.partner_sections {
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.partner_sections > img {
+  padding: 4rem 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .partner_sections {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
+
 /* Footer */
 .footer {
   background-color: var(--color-light);
