@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Screenshot - Mobile
 
@@ -42,7 +42,7 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - Bottom-up approach
-- [Normalize.css] (https://necolas.github.io/normalize.css/) - Normalize.css
+- [Normalize.css](https://necolas.github.io/normalize.css/) - Normalize.css
 
 ### Continued development
 
