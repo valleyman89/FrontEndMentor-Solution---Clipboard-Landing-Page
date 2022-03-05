@@ -53,11 +53,11 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media screen and (min-width: 1024px) {
+/* @media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
   }
-}
+} */
 /* Typography */
 
 html {
@@ -73,6 +73,7 @@ body {
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.8rem;
   letter-spacing: 1.5px;
+  overflow: scroll;
 }
 
 h1,
@@ -293,6 +294,9 @@ p {
 }
 .footer__sections {
   justify-items: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .logo--footer {
@@ -328,8 +332,9 @@ p {
 
 @media screen and (min-width: 1000px) {
   .footer__sections {
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30%, max-content));
   }
+
   .footer__section > ul {
     columns: 3;
     display: inline-block;
