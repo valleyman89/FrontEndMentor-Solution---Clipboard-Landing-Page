@@ -220,17 +220,29 @@ p {
     font-size: 2rem;
   }
 
+  .block-feature__image > img {
+    max-width: 700px;
+    width: auto;
+  }
+
   .feature__content {
+    grid-template-columns: 50% 50%;
     align-items: center;
     text-align: left;
+    margin: 0;
   }
+  .feature__list {
+    margin-left: 10rem;
+  }
+
   .feature__paragraph {
     margin-bottom: 5rem;
   }
 
   .feature__image {
+    justify-self: end;
     max-width: 700px;
-    width: auto;
+    width: 100%;
   }
 }
 
